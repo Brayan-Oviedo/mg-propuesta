@@ -62,9 +62,9 @@ nav{position:fixed;inset:0 0 auto;z-index:500;height:50px;display:flex;align-ite
 #prog{position:fixed;left:14px;top:50%;transform:translateY(-50%);width:2px;height:100px;background:var(--br);border-radius:1px;z-index:400}
 #prog-fill{width:100%;height:0%;background:var(--p);border-radius:1px;transition:height .7s cubic-bezier(.76,0,.24,1)}
 
-/* WA WIDGET — centro pantalla */
-#wa-widget{position:fixed;top:50%;left:50%;width:284px;z-index:300;opacity:0;animation:wfloat 5s ease-in-out infinite}
-@keyframes wfloat{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,calc(-50% - 7px))}}
+/* WA WIDGET — left-center */
+#wa-widget{position:fixed;top:50%;left:28px;width:284px;z-index:300;opacity:0;animation:wfloat 5s ease-in-out infinite}
+@keyframes wfloat{0%,100%{transform:translateY(-50%)}50%{transform:translateY(calc(-50% - 7px))}}
 #wa-widget .wa-card{width:100%;box-shadow:0 0 0 1px rgba(155,109,255,.10),0 32px 80px rgba(0,0,0,.75);transition:box-shadow .4s}
 #wa-widget .wa-card.responding{box-shadow:0 0 0 1px rgba(155,109,255,.35),0 0 40px rgba(155,109,255,.18),0 32px 80px rgba(0,0,0,.75)}
 .wa-live{width:6px;height:6px;border-radius:50%;background:var(--p);animation:wablink 1.4s ease-in-out infinite;flex-shrink:0}
